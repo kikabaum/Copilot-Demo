@@ -16,7 +16,6 @@ import PanelContainer from "../components/Layout/PanelContainer";
 import PanelContent from "../components/Layout/PanelContent";
 import AdminNavbar from "components/Navbars/AdminNavbar";
 import MiniStatistics from "components/Card/MiniStatistics";
-import SalesTable from "../components/SalesTable";
 
 // Chart components
 import ActiveUsers from "components/Charts/ActiveUsers";
@@ -78,14 +77,6 @@ const Dashboard = () => {
                   percentage={8}
                   icon={<CartIcon h={"24px"} w={"24px"} color={"white"} />}
                 />
-              </SimpleGrid>
-              {/* New grid for SalesTable */}
-              <SimpleGrid
-                templateColumns={{ sm: "1fr" }}
-                gap="24px"
-                mb={{ lg: "26px" }}
-              >
-                <SalesTable />
               </SimpleGrid>
               <Grid
                 templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
