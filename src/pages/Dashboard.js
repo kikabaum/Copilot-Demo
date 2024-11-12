@@ -26,6 +26,7 @@ import SalesOverview from "components/Charts/SalesOverview";
 
 // LaunchDarkly SDK to access feature flags directive
 import { useFlags } from "launchdarkly-react-client-sdk";
+import { lineChartData, lineChartOptions } from "variables/charts";
 
 const Dashboard = () => {
   // Getting LaunchDarkly feature flags
@@ -98,9 +99,12 @@ const Dashboard = () => {
                   percentage={23}
                   chart={<BarChart />}
                 />
-                {/* Remove lineChart */}
                 {lineChart ? (
-                  <div />
+                  <SalesOverview
+                    title={"Sales Overview"}
+                    percentage={12}
+                    chart={<LineChart data={lineChartData} options={lineChartOptions} />}
+                  />
                 ) : (
                   <div />
                 )}
