@@ -20,8 +20,6 @@ import MiniStatistics from "components/Card/MiniStatistics";
 // Chart components
 import ActiveUsers from "components/Charts/ActiveUsers";
 import BarChart from "components/Charts/BarChart";
-import LineChart from "components/Charts/LineChart";
-import SalesOverview from "components/Charts/SalesOverview";
 
 // LaunchDarkly SDK to access feature flags directive
 import { useFlags } from "launchdarkly-react-client-sdk";
@@ -89,12 +87,6 @@ const Dashboard = () => {
                   percentage={23}
                   chart={<BarChart />}
                 />
-                {/* Remove lineChart */}
-                {lineChart ? (
-                  <div />
-                ) : (
-                  <div />
-                )}
               </Grid>
             </PanelContainer>
           </PanelContent>
