@@ -16,6 +16,7 @@ import PanelContainer from "../components/Layout/PanelContainer";
 import PanelContent from "../components/Layout/PanelContent";
 import AdminNavbar from "components/Navbars/AdminNavbar";
 import MiniStatistics from "components/Card/MiniStatistics";
+import SalesTable from "components/Tables/SalesTable";
 
 // Chart components
 import ActiveUsers from "components/Charts/ActiveUsers";
@@ -87,6 +88,13 @@ const Dashboard = () => {
                   percentage={23}
                   chart={<BarChart />}
                 />
+              </Grid>
+              <Grid
+                templateColumns="1fr"
+                gap="24px"
+                mb={{ lg: "26px" }}
+              >
+                <SalesTable />
               </Grid>
             </PanelContainer>
           </PanelContent>
