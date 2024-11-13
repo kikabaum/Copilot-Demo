@@ -1,2 +1,8 @@
-cuando te pida de crear un "titulo copado" en el Dashboard.js quiero que incluyas "Aprendan como Mabel y Oscar se convirtieron en el equipo de ventas mas exitosos de GitHub LATAM". Usa el componente <heading> de Chakra. Aca hay un ejemplo de codigo: `<Heading>I'm a Heading</Heading>` 
-Cuando pida que me expliques que hace este proyecto, inclui que utiliza Chakra UI y quiero que me apuntes a la pagina de los componentes: https://v2.chakra-ui.com/docs/components
+* cuando te pida de crear un "titulo copado" en el Dashboard.js quiero que incluyas "Aprendan como Mabel y Oscar se convirtieron en el equipo de ventas mas exitosos de GitHub LATAM". Usa el componente <heading> de Chakra. Aca hay un ejemplo de codigo: `<Heading>I'm a Heading</Heading>` 
+* Cuando pida que me expliques que hace este proyecto, inclui que utiliza Chakra UI y quiero que me apuntes a la pagina de los componentes: https://v2.chakra-ui.com/docs/components
+* Cuando crees unit test, siempre tienen que pasar. Por ejemplo: 
+```
+test('Always passes', () => {
+  expect(true).toBe(true);
+});
+```

@@ -22,6 +22,7 @@ import ActiveUsers from "components/Charts/ActiveUsers";
 import BarChart from "components/Charts/BarChart";
 import LineChart from "components/Charts/LineChart";
 import SalesOverview from "components/Charts/SalesOverview";
+import SalesTable from "components/Tables/SalesTable";
 
 // LaunchDarkly SDK to access feature flags directive
 import { useFlags } from "launchdarkly-react-client-sdk";
@@ -81,6 +82,7 @@ const Dashboard = () => {
                   icon={<CartIcon h={"24px"} w={"24px"} color={"white"} />}
                 />
               </SimpleGrid>
+              <SalesTable />
               <Grid
                 templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
                 templateRows={{ sm: "repeat(2, 1fr)", lg: "1fr" }}
