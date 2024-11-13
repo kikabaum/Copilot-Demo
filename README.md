@@ -1,16 +1,25 @@
 # React Dashboard Demo
 
-A modern dashboard application built with React, demonstrating component organization and responsive design.
+A modern dashboard application built with React and Chakra UI, demonstrating component organization, responsive design, and data visualization.
+
+## Technologies
+
+- React.js
+- [Chakra UI](https://v2.chakra-ui.com/docs/components) - Component library for building accessible React applications
+- LaunchDarkly - Feature flag management
+- Chart.js - Data visualization
 
 ## Project Structure
 
 - `/src`
-  - `/components` - Reusable React components
+  - `/components`
     - `/Card` - Card-based display components
     - `/Charts` - Data visualization components
     - `/Icons` - Custom icon components
     - `/Layout` - Layout structure components
     - `/Navbars` - Navigation components
+    - `/Tables` - Data table components
+  - `/variables` - Chart configurations and data
   - `/theme` - Theme customization
   - `/pages` - Main application pages
   - `App.js` - Main application component
@@ -20,8 +29,11 @@ A modern dashboard application built with React, demonstrating component organiz
 
 - Responsive dashboard layout
 - Interactive data visualization
+- Sales performance tracking
+- Monthly comparison tables
 - Custom card components
 - Dynamic charts and statistics
+- Feature flag integration
 - Light/dark theme support
 - User authentication
 
@@ -45,8 +57,9 @@ npm start
 ## Key Components
 
 - `MiniStatistics` - Display key metrics with icons
-- `ProductCard` - Show product information with images
-- `ChartStatistics` - Visualize data with various chart types
+- `SalesTable` - Monthly sales performance comparison
+- `ActiveUsers` - User activity visualization
+- `BarChart` - Data visualization component
 - `AdminNavbar` - Main navigation component
 - `PanelContainer` - Layout wrapper for content sections
 

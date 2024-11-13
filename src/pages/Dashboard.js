@@ -78,6 +78,13 @@ const Dashboard = () => {
                 />
               </SimpleGrid>
               <Grid
+                templateColumns="1fr"
+                gap="24px"
+                mb={{ lg: "26px" }}
+              >
+                <SalesTable />
+              </Grid>
+              <Grid
                 templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
                 templateRows={{ sm: "repeat(2, 1fr)", lg: "1fr" }}
                 gap="24px"
@@ -88,13 +95,6 @@ const Dashboard = () => {
                   percentage={23}
                   chart={<BarChart />}
                 />
-              </Grid>
-              <Grid
-                templateColumns="1fr"
-                gap="24px"
-                mb={{ lg: "26px" }}
-              >
-                <SalesTable />
               </Grid>
             </PanelContainer>
           </PanelContent>

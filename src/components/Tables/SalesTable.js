@@ -8,6 +8,7 @@ import {
   Td,
   TableCaption,
   TableContainer,
+  Box,
 } from '@chakra-ui/react';
 import { lineChartData, lineChartOptions } from "variables/charts";
 
@@ -19,29 +20,33 @@ const SalesTable = () => {
   const { categories } = lineChartOptions.xaxis;
 
   return (
-    <TableContainer>
-      <Table variant='simple'>
-        <TableCaption>Monthly Sales Performance</TableCaption>
-        <Thead>
-          <Tr>
-            <Th>Month</Th>
-            {lineChartData.map((dataset) => (
-              <Th key={dataset.name} isNumeric>{dataset.name}</Th>
-            ))}
-          </Tr>
-        </Thead>
-        <Tbody>
-          {categories.map((date, index) => (
-            <Tr key={index}>
-              <Td>{new Date(date).toLocaleString('default', { month: 'long' })}</Td>
-              {lineChartData.map((dataset) => (
-                <Td key={dataset.name} isNumeric>{dataset.data[index]}</Td>
+    <Box borderRadius="lg" bg="white" p={4}>
+      <TableContainer>
+        <Table variant='simple'>
+          <TableCaption>Monthly Sales Performance</TableCaption>
+          <Thead>
+            <Tr>
+              <Th>Product</Th>
+              {categories.map((date) => (
+                <Th key={date} isNumeric>
+                  {new Date(date).toLocaleString('default', { month: 'short' })}
+                </Th>
               ))}
             </Tr>
-          ))}
-        </Tbody>
-      </Table>
-    </TableContainer>
+          </Thead>
+          <Tbody>
+            {lineChartData.map((dataset) => (
+              <Tr key={dataset.name}>
+                <Td>{dataset.name}</Td>
+                {dataset.data.map((value, index) => (
+                  <Td key={index} isNumeric>{value}</Td>
+                ))}
+              </Tr>
+            ))}
+          </Tbody>
+        </Table>
+      </TableContainer>
+    </Box>
   );
 };
 
