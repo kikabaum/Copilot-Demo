@@ -1,19 +1,17 @@
 # React Dashboard Demo
 
-A modern dashboard application built with React and Chakra UI, demonstrating component organization and responsive design.
+A modern dashboard application built with React, demonstrating component organization and responsive design.
 
 ## Project Structure
 
 - `/src`
-
-
   - `/components` - Reusable React components
     - `/Card` - Card-based display components
     - `/Charts` - Data visualization components
     - `/Icons` - Custom icon components
     - `/Layout` - Layout structure components
     - `/Navbars` - Navigation components
-  - `/theme` - Chakra UI theme customization
+  - `/theme` - Theme customization
   - `/pages` - Main application pages
   - `App.js` - Main application component
   - `index.js` - Application entry point
