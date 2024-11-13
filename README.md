@@ -49,7 +49,7 @@ npm start
 - `ChartStatistics` - Visualize data with various chart types
 - `AdminNavbar` - Main navigation component
 - `PanelContainer` - Layout wrapper for content sections
-- `SalesTable` - Display monthly sales data in a responsive table format with color mode support
+- `SalesTable` - Display monthly sales data in a responsive table format
 
 ## Contributing
 
