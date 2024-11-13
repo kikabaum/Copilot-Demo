@@ -20,9 +20,12 @@ import MiniStatistics from "components/Card/MiniStatistics";
 // Chart components
 import ActiveUsers from "components/Charts/ActiveUsers";
 import BarChart from "components/Charts/BarChart";
+import SalesOverview from "components/Charts/SalesOverview";
+import LineChart from "components/Charts/LineChart";
 
 // LaunchDarkly SDK to access feature flags directive
 import { useFlags } from "launchdarkly-react-client-sdk";
+import SalesTable from "components/Tables/SalesTable";
 
 const Dashboard = () => {
   // Getting LaunchDarkly feature flags
@@ -80,6 +83,13 @@ const Dashboard = () => {
                 />
               </SimpleGrid>
               <Grid
+                templateColumns="1fr"
+                gap="24px"
+                mb={{ lg: "26px" }}
+              >
+                <SalesTable />
+              </Grid>
+              <Grid
                 templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
                 templateRows={{ sm: "repeat(2, 1fr)", lg: "1fr" }}
                 gap="24px"
@@ -89,6 +99,11 @@ const Dashboard = () => {
                   title={"Active Users"}
                   percentage={23}
                   chart={<BarChart />}
+                />
+                <SalesOverview
+                  title={"Sales Overview"}
+                  percentage={27}
+                  chart={<LineChart />}
                 />
               </Grid>
             </PanelContainer>

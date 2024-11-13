@@ -24,6 +24,9 @@ A modern dashboard application built with React, demonstrating component organiz
 - Dynamic charts and statistics
 - Light/dark theme support
 - User authentication
+- Feature flags integration with LaunchDarkly
+- Chakra UI components (https://v2.chakra-ui.com/docs/components)
+- Comprehensive test coverage
 
 ## Getting Started
 
@@ -49,6 +52,14 @@ npm start
 - `ChartStatistics` - Visualize data with various chart types
 - `AdminNavbar` - Main navigation component
 - `PanelContainer` - Layout wrapper for content sections
+- `SalesTable` - Display monthly sales data in a responsive table format
+
+## Testing
+
+Run the test suite:
+```sh
+npm test
+```
 
 ## Contributing
 
