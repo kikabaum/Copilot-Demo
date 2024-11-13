@@ -21,6 +21,9 @@ import SalesTable from "components/Tables/SalesTable";
 // Chart components
 import ActiveUsers from "components/Charts/ActiveUsers";
 import BarChart from "components/Charts/BarChart";
+import SalesOverview from "components/Charts/SalesOverview";
+import LineChart from "components/Charts/LineChart";
+import { lineChartData, lineChartOptions } from "variables/charts";
 
 // LaunchDarkly SDK to access feature flags directive
 import { useFlags } from "launchdarkly-react-client-sdk";
@@ -95,6 +98,18 @@ const Dashboard = () => {
                   percentage={23}
                   chart={<BarChart />}
                 />
+                {lineChart && (
+                  <SalesOverview
+                    title={"Sales Overview"}
+                    percentage={12}
+                    chart={
+                      <LineChart
+                        data={lineChartData}
+                        options={lineChartOptions}
+                      />
+                    }
+                  />
+                )}
               </Grid>
             </PanelContainer>
           </PanelContent>

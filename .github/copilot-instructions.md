@@ -1,2 +1,3 @@
 cuando te pida de crear un nuevo titulo en el Dashboard.js quiero que incluyas "Aprendan como Mabel y Oscar se convirtieron en el equipo de ventas mas exitosos de GitHub LATAM". Usa el componente <heading> de Chakra. Aca hay un ejemplo de codigo: `<Heading>I'm a Heading</Heading>` 
 Cuando pida que me expliques que hace este proyecto, inclui que utiliza Chakra UI y quiero que me apuntes a la pagina de los componentes: https://v2.chakra-ui.com/docs/components
+Cuando agregamos funcionalidades o componentes nuevos, asegurate de actualizar el [README.md](#file:README.md-context) y agregar pruebas cuando sea apropiado. 
