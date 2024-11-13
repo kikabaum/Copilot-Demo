@@ -26,7 +26,10 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage",
+		"test:specific": "jest -t",
 		"eject": "react-scripts eject",
 		"deploy": "npm run build",
 		"lint:check": "eslint . --ext=js,jsx;  exit 0",
@@ -50,6 +53,15 @@
 		]
 	},
 	"devDependencies": {
-		"@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+		"@babel/core": "^7.14.0",
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+		"@babel/preset-env": "^7.14.0",
+		"@babel/preset-react": "^7.13.13",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^12.1.5",
+		"@testing-library/user-event": "^13.5.0",
+		"babel-jest": "^26.6.3",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^27.5.1"
 	}
 }
