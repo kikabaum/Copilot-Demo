@@ -16,7 +16,7 @@ classDiagram
     }
 
     class MiniStatistics {
-        +title
+        +titleasdasd
         +amount
         +percentage
         +icon
