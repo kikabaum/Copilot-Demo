@@ -1,0 +1,1 @@
+cuando te pida de crear un nuevo titulo en el Dashboard.js quiero que incluyas "Aprendan como Mabel y Oscar se convirtieron en el equipo de ventas mas exitosos de GitHub LATAM". Usa el componente <heading> de Chakra. Aca hay un ejemplo de codigo: `<Heading>I'm a Heading</Heading>` 
