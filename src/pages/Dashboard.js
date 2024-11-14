@@ -23,6 +23,7 @@ import BarChart from "components/Charts/BarChart";
 
 // LaunchDarkly SDK to access feature flags directive
 import { useFlags } from "launchdarkly-react-client-sdk";
+import { Heading } from "@chakra-ui/react";
 
 const Dashboard = () => {
   // Getting LaunchDarkly feature flags
@@ -45,6 +46,8 @@ const Dashboard = () => {
           <PanelContent w="75%">
             <PanelContainer>
               <AdminNavbar brandText="Dashboard" />
+              <Heading>Aprendan como Mabel y Oscar se convirtieron en el equipo de ventas mas exitosos de GitHub LATAM</Heading>
+
               <SimpleGrid
                 columns={{ sm: 1, md: 2, xl: 4 }}
                 spacing="24px"
