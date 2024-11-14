@@ -1,7 +1,7 @@
 import React from "react";
 
 // Chakra imports
-import { Grid, Flex, SimpleGrid, ChakraProvider } from "@chakra-ui/react";
+import { Grid, Flex, SimpleGrid, ChakraProvider, Heading } from "@chakra-ui/react";
 import theme from "theme/theme.js";
 
 // Custom Components
@@ -44,6 +44,8 @@ const Dashboard = () => {
         >
           <PanelContent w="75%">
             <PanelContainer>
+   
+              <Heading><s>Cassidy</s> Mabel y Oscar Coolest devs in the world</Heading>
               <AdminNavbar brandText="Dashboard" />
               <SimpleGrid
                 columns={{ sm: 1, md: 2, xl: 4 }}
